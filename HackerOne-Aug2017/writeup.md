@@ -2,17 +2,18 @@ Post on BrakeSec slack - CTF channel
 
 https://docs.google.com/document/d/1sz2-n-IiqPGDm6b6NF8ajYogTbirOddNm45Uvj3eBq8/edit
 
-"Capture The Flag: reversing the password
-Yesterday, at 08:01:00am (-0700 DST), a criminal gained access to a company’s system and changed all the administrator passwords. It then tried to remove all its traces. In the process of doing so, one of the logging systems happened to run a backup to another data center.
+> Capture The Flag: reversing the password
+> Yesterday, at 08:01:00am (-0700 DST), a criminal gained access to a company’s system and changed all the administrator passwords. It  then tried to remove all its traces. In the process of doing so, one of the logging systems happened to run a backup to another data  center.
 
-One of the company’s system administrator, Barry Collin, was able to retrieve part of the data, which might allow them to recover the updated password to regain access to the system. Unfortunately, the criminal noticed the running backup and shut it off immediately by killing the process. The data got corrupted and some LSBs have shifted. Barry really hopes there’s a pattern in the corrupted bits, but he hasn’t been able to figure it out… He also asks himself why they had to use a hashing algorithm to store the passwords. It makes recovery so hard.
+> One of the company’s system administrator, Barry Collin, was able to retrieve part of the data, which might allow them to recover the updated password to regain access to the system. Unfortunately, the criminal noticed the running backup and shut it off immediately by killing the process. The data got corrupted and some LSBs have shifted. Barry really hopes there’s a pattern in the corrupted bits, but he hasn’t been able to figure it out… He also asks himself why they had to use a hashing algorithm to store the passwords. It makes recovery so hard.
 
-The challenge: recover the data, reverse both passwords, and help the system administrator gain access to the system again.
+> The challenge: recover the data, reverse both passwords, and help the system administrator gain access to the system again.
 
-Email the solution to j@hackerone.com. First 5 correct submissions get a HackerOne hoodie. You only have 2 chances and your answer has to include a proof of concept how you found the solution. CTF ends at 10pm August 12th, 2017 (PDT).
+> Email the solution to j@hackerone.com. First 5 correct submissions get a HackerOne hoodie. You only have 2 chances and your answer has to include a proof of concept how you found the solution. CTF ends at 10pm August 12th, 2017 (PDT).
 
-Good luck!
+> Good luck!
 
+> ```
 7b 0a 20 a0 22 65 76 e5
 6e 74 22 ba 20 22 70 e1
 73 73 77 ef 72 64 5f e3
@@ -39,7 +40,9 @@ Good luck!
 6d 65 73 f4 61 6d 70 a2
 3a 20 31 b5 30 31 38 b5
 38 38 36 b0 30 30 30 8a
-7d 0a"
+7d 0a
+```
+
 
 
 Converted hex into ascii
