@@ -6,10 +6,9 @@ List of CTFs:
 * In Progress
   * [PicoCTF](https://2017.picoctf.com/)
 * Unstarted
-  * https://blitz.ctf365.com/
-  * http://overthewire.org/wargames/
+  * [OverTheWire](http://overthewire.org/wargames/)
 
 Vulnerable systems:
 
-* https://www.vulnhub.com - Contains lots of interesting vulnerable system that others have created.
-* https://www.vulnhub.com/series/basic-pentesting,143/ - A system specifically designed for beginners.
+* [VulnHub](https://www.vulnhub.com) - Contains lots of interesting vulnerable system that others have created.
+* [Basic Pentesting](https://www.vulnhub.com/series/basic-pentesting,143/) - A system specifically designed for beginners.
