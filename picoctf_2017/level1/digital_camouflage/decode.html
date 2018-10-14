@@ -2,7 +2,7 @@
 	<body>
 		<button onclick="decode()">Decode</button>
 
-		<p id="print"></p>
+		<p id="toscreen"></p>
 		
 		<script>
 			function decode() {
@@ -10,7 +10,7 @@
 				var decoded = window.atob(passwd);
 				
 				var result = "Encoded Password: " + passwd + "<br>" + "Decoded Password: " + decoded;
-				document.getElementById("print").innerHTML = res;
+				document.getElementById("toscreen").innerHTML = res;
 			}
 		</script>
 	</body>
