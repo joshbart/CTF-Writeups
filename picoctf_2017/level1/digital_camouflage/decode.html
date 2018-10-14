@@ -1,13 +1,13 @@
 <html>
 	<body>
-		<button onclick="decode()">Decode</button>
+		<button onclick="decodePswd()">Decode</button>
 
 		<p>The results should appear below.</p>
 
 		<p id="toscreen"></p>
 		
 		<script>
-			function decode() {
+			function decodePswd() {
 				var passwd = "dEo2NFpxYmRMdw==";
 				var decoded = window.atob(passwd);
 				
