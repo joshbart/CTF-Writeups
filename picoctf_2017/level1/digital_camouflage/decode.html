@@ -1,10 +1,17 @@
 <html>
 	<body>
+		<button onclick="decode()">Decode</button>
+
+		<p id="print"></p>
+		
 		<script>
-			var passwd = "dEo2NFpxYmRMdw==";
-			var decoded = window.atob(passwd);
-			
-			var result = "Encoded Password: " + passwd + "<br>" + "Decoded Password: " + decoded;
+			function decode() {
+				var passwd = "dEo2NFpxYmRMdw==";
+				var decoded = window.atob(passwd);
+				
+				var result = "Encoded Password: " + passwd + "<br>" + "Decoded Password: " + decoded;
+				document.getElementById("print").innerHTML = res;
+			}
 		</script>
 	</body>
 </html>
