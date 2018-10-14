@@ -102,4 +102,25 @@ Server packet:
 
 And there it is, the clue I needed. `<form name="login" class="contentstuff" method="post" action="pages/main.html" onsubmit="modifyPass()">`. So, the password is being modified by the modifyPass() function before being sent to the server.
 
+## 14 Oct 2018
+I've decided that the following code deserves a closer look.
+```
+<script>
+  function modifyPass(){
+    document.login.pswrd.value = btoa(document.login.pswrd.value);
+  }
+</script>
+```
+I've found that typically the `<script>` tag refers to javascript when no other language is specified.  Doing a search turned up [information about the `btoa()` function in javascript](https://www.w3schools.com/jsref/met_win_btoa.asp).  It looks like I can use the `atob()` function to decode it.
 
+---
+
+I created a simple html page to decode the password.  I'm not very good at javascript, so it needs a bit of work.  At this point, it prints nothing out.
+
+---
+
+Alright, that took a bit of work, but I finally got a [working script][./decode.html]. The decrypted password is `tJ64ZqbdLw`.
+
+---
+
+Entered the code.  SUCCESS!
